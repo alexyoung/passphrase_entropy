@@ -10,15 +10,15 @@ Inspired by [xkcd 936](http://xkcd.com/936/).
 Usage
 -----
 
-    require "passphrase_entropy"
+    require 'passphrase_entropy'
 
     pe = PassphraseEntropy.new
     # or customise the dictionary:
-    pe = PassphraseEntropy.new(File.read("/usr/share/dict/words"))
+    pe = PassphraseEntropy.new(File.read('/usr/share/dict/words'))
 
-    pe.entropy("password") # => 6
-    pe.entropy("correct horse battery staple") # => 24
-    pe.entropy("Tr0ub4dor&3") # => 21
+    pe.entropy('password') # => 6
+    pe.entropy('correct horse battery staple') # => 24
+    pe.entropy('Tr0ub4dor&3') # => 21
 
 You can decide on your acceptable level of complexity.
 
